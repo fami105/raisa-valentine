@@ -1,17 +1,6 @@
-const music = document.getElementById("bgMusic");
-
-// Unmute & play on first tap
-document.addEventListener("click", () => {
-  music.muted = false;
-  music.play();
-}, { once: true });
-
-document.addEventListener("touchstart", () => {
-  music.muted = false;
-  music.play();
-}, { once: true });
 const noBtn = document.getElementById("no");
 const yesBtn = document.getElementById("yes");
+const music = document.getElementById("bgMusic");
 
 // Make NO impossible
 function teleportNo() {
@@ -33,14 +22,13 @@ function teleportNo() {
   });
 });
 
-// YES = Show message + GIF 💕
+// YES = Play music + show result 💖
 yesBtn.addEventListener("click", () => {
-  const music = document.getElementById("bgMusic");
-  if (music) music.play();
+  music.play(); // 🔥 This will work on all devices
+
   document.body.innerHTML = `
     <div class="card">
-      <img src="yes.JPG" alt="Yes Photo" width="220" />
-      
+      <img src="yes.JPG" width="220" />
       <h2>Raisa said YES 💖🥰</h2>
       <p>You’re officially my Valentine 💘</p>
     </div>

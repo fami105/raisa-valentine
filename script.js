@@ -1,3 +1,15 @@
+const music = document.getElementById("bgMusic");
+
+// Unmute & play on first tap
+document.addEventListener("click", () => {
+  music.muted = false;
+  music.play();
+}, { once: true });
+
+document.addEventListener("touchstart", () => {
+  music.muted = false;
+  music.play();
+}, { once: true });
 const noBtn = document.getElementById("no");
 const yesBtn = document.getElementById("yes");
 

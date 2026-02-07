@@ -9,37 +9,50 @@ body {
   overflow: hidden;
 }
 
+/* Bigger card */
 .card {
   text-align: center;
   background: white;
-  padding: 30px;
-  border-radius: 25px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  padding: 45px 50px;
+  border-radius: 30px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.18);
+  width: 360px;
+  max-width: 90%;
 }
 
+/* Bigger image */
 img {
-  width: 130px;
+  width: 160px;
+  margin-bottom: 15px;
 }
 
+/* Bigger heading */
 h2 {
-  margin: 20px 0;
+  margin: 25px 0;
+  font-size: 26px;
+}
+
+/* Bigger text */
+p {
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 .buttons {
-  margin-top: 20px;
+  margin-top: 25px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   position: relative;
 }
 
+/* Bigger buttons */
 button {
-  padding: 12px 28px;
-  font-size: 16px;
+  padding: 14px 34px;
+  font-size: 18px;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
-  position: relative;
 }
 
 #yes {

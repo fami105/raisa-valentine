@@ -25,7 +25,7 @@ function teleportNo() {
 yesBtn.addEventListener("click", () => {
   document.body.innerHTML = `
     <div class="card">
-      <img src="yes.gif" alt="yes gif" width="180" />
+      <img src="yes.jpg" alt="yes jpg" width="180" />
       
       <h2>Raisa said YES 💖🥰</h2>
       <p>You’re officially my Valentine 💘</p>

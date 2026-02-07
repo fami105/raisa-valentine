@@ -1,7 +1,11 @@
 const noBtn = document.getElementById("no");
 const yesBtn = document.getElementById("yes");
 const music = document.getElementById("bgMusic");
+const playBtn = document.getElementById("play");
 
+playBtn.addEventListener("click", () => {
+  music.play().catch(err => console.log(err));
+});
 // Make NO impossible
 function teleportNo() {
   const maxX = window.innerWidth - noBtn.offsetWidth;

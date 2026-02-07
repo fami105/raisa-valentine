@@ -23,6 +23,8 @@ function teleportNo() {
 
 // YES = Show message + GIF 💕
 yesBtn.addEventListener("click", () => {
+  const music = document.getElementById("bgMusic");
+  if (music) music.play();
   document.body.innerHTML = `
     <div class="card">
       <img src="yes.JPG" alt="Yes Photo" width="220" />
